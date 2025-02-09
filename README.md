@@ -71,7 +71,7 @@ I chose to pair it with **Poppins** for headings - another sans-serif font that 
 
 ### Imagery
 All images used in this website are of my own creation using Canva.\
-Other graphics are incorporated using Font Awesome.
+Other graphics are incorporated using [Font Awesome](https://fontawesome.com/).
 
 ### Wireframes
 The wireframes for mobile were created using Moqups web application.\
@@ -122,8 +122,8 @@ To Deploy the site using GitHub Pages:
 1. Login (or signup) to [Github](#https://github.com/).
 2. Go to the repository for this project, [code-with-angela/englishwebsite](https://github.com/code-with-angela/englishwebsite).
 3. Go to Settings.
-4. Select pages in the left hand nav menu.
-5. From the source dropdown select main branch and press save.
+4. Select pages in the left hand nav bar.
+5. In the source section, select main branch and click save.
 6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
 
 ### Local Development
@@ -136,10 +136,10 @@ To fork the repository:
 #### How to Clone
 To clone the repository:
 1. Log in (or sign up) to [Github](#https://github.com/).
-2. Go to the repository for this project,  [code-with-angela/englishwebsite](https://github.com/code-with-angela/englishwebsite).
+2. Go to the repository for this project, [code-with-angela/englishwebsite](https://github.com/code-with-angela/englishwebsite).
 3. Click on the Code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
-5. Type 'git clone' into the terminal and then paste the link you copied in step 3. & press Enter.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. & press the Enter key.
 
 ## TESTING
 Please refer to [TESTING.md](./TESTING.md) file for the testing documentation.
