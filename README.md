@@ -38,7 +38,7 @@ View deployed site: [English with Angela](#)
 
 ## USER EXPERIENCE (UX)
 ### User Stories
-#### Target Audience
+#### Target Audience:
 * As a student preparing for my English exam, I want to find tutoring lessons that focus on the exam’s specific requirements, so that I can improve my skills and perform well on the test.
 * As a student with a good level of English, I want to find advanced English tutoring lessons to refine my skills, so that I can reach a higher proficiency level and feel more confident using English in various contexts.
 * As an IT professional, I want to find English tutoring lessons focused on IT terminology and communication skills, so that I can improve my ability to work in English-speaking environments and collaborate effectively with international teams.
@@ -48,18 +48,18 @@ View deployed site: [English with Angela](#)
 * As a first time visitor, I want to be able to instantly see the services this tutor provides.
 * As a first time visitor, I want to be able to easily navigate the website to find information I need.
 
-#### Potential client
+#### Potential client:
 * As a potential client, I want to see the cost of the private lesson.
 * As a potential client, I want to check the session details, such as duration, lesson format, recourses used, so that I can ensure that it fits my needs.
 * As a potential client, I want to check other students' reviews to make an informed decision.
 * As a potential client, I want to be able to find answers to my additional questions.
 
-#### Community
+#### Community:
 * As someone interested to be a part of this tutor's community, I want to be able to follow them on different social media.
 
 ## DESIGN
 ### Colour Scheme
-I chose vibrant colours for this project to give the website energetic, welcoming and engaging feel.
+I chose vibrant colours for this project to give the website energetic, welcoming and engaging feel.\
 [Realtime Colors](https://www.realtimecolors.com/?colors=131610-FCFCFB-96c7e7-ee7ca2-eab55a&fonts=Poppins-Nunito%20Sans) website was used to generate color pallete as it provides instant realistic feel.
 
 ### Typography
@@ -70,18 +70,18 @@ Google Fonts was used to import the chosen fonts for use in the site.
 I chose to pair it with **Poppins** for headings - another sans-serif font that gives a slightly more structured feel due to its more geometric style.
 
 ### Imagery
-All images used in this website are of my own creation using Canva.
+All images used in this website are of my own creation using Canva.\
 Other graphics are incorporated using Font Awesome.
 
 ### Wireframes
-The wireframes for mobile were created using Moqups web application.
+The wireframes for mobile were created using Moqups web application.\
 [Mobile wireframe](https://app.moqups.com/g5ID5qfnJA5NRQ334gz5yq1XnijMqEg8/view/page/ad64222d5)
 
 ### Features
 This website is a single scrolling page with 5 separate page areas, that include about me section, services section, student reviews section, trial lesson request section and FAQs.
 
-The website has a favicon in the browser tab.
-A sticky header on the page with a title that acts as a link to the top of the page and navbar to jump to different sections.
+The website has a favicon in the browser tab.\
+A sticky header on the page with a title that acts as a link to the top of the page and navbar to jump to different sections.\
 A footer with copyright information, Privacy Policy Statement, Offer Agreement and contact me link.
 
 #### Current limitations and future implementations
@@ -101,17 +101,17 @@ This website is created with accessibility in mind from the very beginning:
 HTML and CSS were used to create this project.
 
 ### Frameworks, Libraries & Programs Used
-[Git](https://git-scm.com/) - for version control.
-[Github](https://github.com/) - for storing and saving files for the website.
-[Google Fonts](https://fonts.google.com/) - for importing the fonts used on the website.
-[Font Awesome](https://fontawesome.com/) - for the iconography on the website.
-[Google Dev Tools](https://developers.google.com/web/tools) - for troubleshooting and testing features, solving issues with responsiveness and styling.
-[Calendly](https://calendly.com/) - for embedded calendar to shedule the trial lesson.
-[Favicon.io](https://favicon.io/) - for creating favicon.
-[Shields.io](https://shields.io/) - for adding badges to markdown files.
-[Canva](https://www.canva.com/) - for creating custom images.
-[VS Code](https://code.visualstudio.com/) - IDE for coding the website.
-[Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension for checking the spelling of the website and markdown files.
+[Git](https://git-scm.com/) - for version control.\
+[Github](https://github.com/) - for storing and saving files for the website.\
+[Google Fonts](https://fonts.google.com/) - for importing the fonts used on the website.\
+[Font Awesome](https://fontawesome.com/) - for the iconography on the website.\
+[Google Dev Tools](https://developers.google.com/web/tools) - for troubleshooting and testing features, solving issues with responsiveness and styling.\
+[Calendly](https://calendly.com/) - for embedded calendar to shedule the trial lesson.\
+[Favicon.io](https://favicon.io/) - for creating favicon.\
+[Shields.io](https://shields.io/) - for adding badges to markdown files.\
+[Canva](https://www.canva.com/) - for creating custom images.\
+[VS Code](https://code.visualstudio.com/) - IDE for coding the website.\
+[Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension for checking the spelling of the website and markdown files.\
 [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension for viewing the website as people with accessibility needs.
 
 ## DEPLOYMENT & LOCAL DEVELOPMENT
@@ -149,6 +149,6 @@ Please refer to [TESTING.md](./TESTING.md) file for the testing documentation.
 The content for this website was written by the owner of English with Angela website.
 
 ### Acknowledgments
-I would like to acknowledge the following people who helped me along the way in completing my first milestone project:
+I would like to acknowledge the following people who helped me along the way in completing my first milestone project:\
 Graeme Taylor, my Code Institute mentor.
 
