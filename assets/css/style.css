@@ -38,15 +38,21 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 #menu {
-   list-style-type: none; 
+    list-style-type: none; 
+    display: flex;
+    flex-direction: column;
 }
 
 #menu > li {
-    margin-bottom: 1em;
+    margin-bottom: 0.1rem;
+    text-align: right;
 }
+
 .active {
     border-bottom: 1px solid #96c7e7;
 }
@@ -57,26 +63,76 @@ nav {
     background-color: #FCFCFB;
     width: 100%;
     right: 0;
-    padding: 0 1rem;
+    padding-right: 1rem;
     box-shadow: 0 2px 2px #96c7e7;
     display: none;
     top: 100%;
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
-}
 
+/* Hide checkbox */
 #nav-toggle {
     display: none;
 }
 
-.nav-toggle-label {
-    font-size: 2rem;
+/* Show the menu icon by default, hide the close icon */
+.icon-container .menu-icon {
+    display: inline-block;
+}
+
+.icon-container .close-icon {
+    display: none;
+}
+
+/* When checkbox is checked, switch icons */
+#nav-toggle:checked ~ .icon-container .menu-icon {
+    display: none;
+}
+
+#nav-toggle:checked ~ .icon-container .close-icon {
+    display: inline-block;
+}
+
+/* Show the menu when checked */
+#nav-toggle:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 main {
     flex: 1 0 auto; /*Main element takes all surplus space to push footer down*/
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+/* Media query: >768px */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .icon-container {
+        display: none;
+    }
+}
+
+/* Media query: >992px */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #96c7e7;
+    }
 }
