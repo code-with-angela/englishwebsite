@@ -21,6 +21,33 @@ main {
     flex: 1 0 auto; /*Main element takes all surplus space to push footer down*/
 }
 
+header {
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+#menu {
+   list-style-type: none; 
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+.active {
+    border-bottom: 1px solid #eab55a;
 }

@@ -80,7 +80,7 @@ The wireframes for mobile were created using Moqups web application.\
 [Mobile wireframe](https://app.moqups.com/g5ID5qfnJA5NRQ334gz5yq1XnijMqEg8/view/page/ad64222d5)
 
 ### Features
-This website is a single scrolling page with 5 separate page areas, that include about me section, services section, student reviews section, trial lesson request section and FAQs.
+This website is a single scrolling page with 5 separate page areas, that include about me section, services section, trial lesson request section, student reviews, and FAQs.
 
 The website has a favicon in the browser tab. I wanted to combine En (from "English") and An (from "Angela") into a short, meaningful symbol, so I came up with E&#331;A, using "&#331;" (eng), which appears in phonetics.\
 A sticky header on the page with a title that acts as a link to the top of the page and navbar to jump to different sections.\
