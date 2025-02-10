@@ -66,8 +66,10 @@ I chose vibrant colours for this project to give the website energetic, welcomin
 Google Fonts was used to import the chosen fonts for use in the site.
 
 **Nunito Sans** was chosen for body as it is a clean, modern sans-serif font that is easy to read on both desktop and mobile devices. Its rounded edges give it a friendly and approachable feel.
+![Nunito Sans font specimen](/documentation/nunito-sans.png)
 
 I chose to pair it with **Poppins** for headings - another sans-serif font that gives a slightly more structured feel due to its more geometric style.
+![Poppins font specimen](/documentation/poppins.png)
 
 ### Imagery
 All images used in this website are of my own creation using Canva.\
@@ -80,7 +82,7 @@ The wireframes for mobile were created using Moqups web application.\
 ### Features
 This website is a single scrolling page with 5 separate page areas, that include about me section, services section, student reviews section, trial lesson request section and FAQs.
 
-The website has a favicon in the browser tab.\
+The website has a favicon in the browser tab. I wanted to combine En (from "English") and An (from "Angela") into a short, meaningful symbol, so I came up with E&#331;A, using "&#331;" (eng), which appears in phonetics.\
 A sticky header on the page with a title that acts as a link to the top of the page and navbar to jump to different sections.\
 A footer with copyright information, Privacy Policy Statement, Offer Agreement and contact me link.
 
@@ -113,6 +115,7 @@ HTML and CSS were used to create this project.
 [VS Code](https://code.visualstudio.com/) - IDE for coding the website.\
 [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension for checking the spelling of the website and markdown files.\
 [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension for viewing the website as people with accessibility needs.
+[Tiny PNG](https://tinypng.com/) - for compressing images.
 
 ## DEPLOYMENT & LOCAL DEVELOPMENT
 ### Deployment
