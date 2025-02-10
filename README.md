@@ -62,6 +62,8 @@ View deployed site: [English with Angela](#)
 I chose vibrant colours for this project to give the website energetic, welcoming and engaging feel.\
 [Realtime Colors](https://www.realtimecolors.com/?colors=131610-FCFCFB-96c7e7-ee7ca2-eab55a&fonts=Poppins-Nunito%20Sans) website was used to generate color pallete as it provides instant realistic feel.
 
+![Colour palette](/documentation/colour-palette.png)
+
 ### Typography
 Google Fonts was used to import the chosen fonts for use in the site.
 
