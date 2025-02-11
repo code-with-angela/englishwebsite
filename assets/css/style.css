@@ -18,18 +18,19 @@ body {
 }
 
 header {
-    padding: 0 1rem;
+    padding: 0 4vw;
     position: fixed;
     z-index: 99;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
 }
 
 header a {
     text-decoration: none;
     color: inherit;
+}
+
+header i {
+    font-size: 6vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,23 +39,45 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    color: #eab55a;
+}
+
+.title {
+    text-align: center;
+    padding-top: 4%;
+    font-weight: bold;
+}
+
+.icon-container {
+    color: #96c7e7;
 }
 
 #menu {
     list-style-type: none; 
     display: flex;
     flex-direction: column;
+    padding: 0.1rem;
 }
 
 #menu > li {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
     text-align: right;
-}
-
-.active {
-    border-bottom: 1px solid #96c7e7;
+    font-size: 4vw;
 }
 
 /* Navbar styles with dropdown toggle */
@@ -62,11 +85,11 @@ nav {
     position: absolute;
     background-color: #FCFCFB;
     width: 100%;
-    right: 0;
+    left: 0;
     padding-right: 1rem;
     box-shadow: 0 2px 2px #96c7e7;
     display: none;
-    top: 100%;
+    top: 50%;
 }
 
 /* Nav toggle */
@@ -101,13 +124,14 @@ nav {
     align-items: flex-end;
 }
 
+/* Main content */
 main {
     flex: 1 0 auto; /*Main element takes all surplus space to push footer down*/
-    margin-top: 40px;
+    margin-top: 7em;
 }
 
 /* Media query: >768px */
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
     /* Header */
     nav {
         display: block;
@@ -117,12 +141,22 @@ main {
         padding-right: 1rem;
     }
 
+    header i {
+    font-size: 1.5rem;
+    }
+
+    .top-row {
+        padding: 3% 2vw 0;
+    }
+
     #menu {
         display: flex;
+        flex-direction: row;
     }
 
     #menu > li {
         padding-left: 1rem;
+        font-size: 90%;
     }
 
     .icon-container {
@@ -134,5 +168,34 @@ main {
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #96c7e7;
+    }
+
+    header {
+        padding: 0 10vw;
+    }
+
+    header i {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .top-row {
+        padding: 3% 2vw 0;
+    }
+
+    .title {
+        padding-top: 2%;
+    }
+
+    .social-icons {
+        gap: 1.5vw;
+    }
+
+    #menu > li {
+        padding-left: 2rem;
+        font-size: 100%;
     }
 }
