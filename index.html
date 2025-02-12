@@ -33,11 +33,11 @@
                 </label>
                 <nav>
                     <ul id="menu">
-                        <li><a href="">About me</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Request a trial lesson</a></li>
-                        <li><a href="">Student reviews</a></li>
-                        <li><a href="">FAQs</a></li>
+                        <li><a href="#about-me">About me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#trial-request-form">Request a trial lesson</a></li>
+                        <li><a href="#reviews">Student reviews</a></li>
+                        <li><a href="#faq">FAQs</a></li>
                         <li><a href="">Contact me</a></li>
                     </ul>
                 </nav>
@@ -51,7 +51,169 @@
     </header>
     <!--Main content-->
     <main>
-        
+        <div class="about-me" id="about-me">
+            <p><strong>English tutor with passion for coding</strong></p>
+            <p><a href="">IELTS (C2, 2024)</a></p>
+            <p><a href="">Bachelor of Philology</a></p>
+            <p>Spent 5 months in the US & 3 years in the UK working and studying</p>
+            <button type="button"><a href="#english-for-exams">Exam preparation</a></button>
+            <button type="button"><a href="#general-english-lessons">English lessons B1-C1</a></button>
+            <button type="button"><a href="#english-for-tech">English for IT</a></button>
+        </div>
+        <div id="services">
+            <div id="english-for-exams" class="services">
+                <div class="price">&#8372;500</div>
+                <h2>IELTS and CAE language proficiency exam</h2>
+                <p>Tailored lessons to improve language production, comprehension, literacy, and conversational skills for exam success</p>
+                <p>1 hour 20 min long</p>
+                <p>2-3 times/week</p>
+                <p>1-to-1 online</p>
+                <p>Official Cambridge materials</p>
+                <a href="#reviews">Student reviews</a>
+            </div>
+            <div id="general-english-lessons" class="services">
+                <div class="price">&#8372;450</div>
+                <h2>English lessons for B1-C1 levels</h2>
+                <p>English proficiency lessons for real-world applications in work, study, and travel</p>
+                <p><strong>Not sure about your level? <a href="https://www.cambridgeenglish.org/test-your-english/general-english/">Take a free test!</a></strong></p>
+                <p>1 hour long</p>
+                <p>2-3 times/week</p>
+                <p>1-to-1 online</p>
+                <p>Official Cambridge materials</p>
+                <a href="#reviews">Student reviews</a>
+            </div>
+            <div id="english-for-tech"class="services">
+                <div class="price">&#8372;480</div>
+                <h2>English for tech industry</h2>
+                <p>Custom-developed lessons to enhance IT-specific vocabulary, communication skills, and career prospects in the global job market</p>
+                <p>1 hour long</p>
+                <p>2-3 times/week</p>
+                <p>1-to-1 online</p>
+                <p>Authentic materials</p>
+                <a href="#reviews">Student reviews</a>
+            </div>
+            <button type="button"><a href="">Request a trial lesson</a></button>
+        </div>
+        <div id="trial-request-form">
+            <h2>Trial lesson request form</h2>
+            <form method="POST">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <br>
+                <input type="tel" name="phone" placeholder="Phone number" required>
+                <br>
+                <input type="email" name="email" placeholder="Email" required>
+                <br>
+                <select name="lesson_type" id="lesson_type" required>
+                    <option value="" disabled selected hidden>Lesson type</option>
+                    <option value="ielts">IELTS exam</option>
+                    <option value="cae">CAE exam</option>
+                    <option value="general_english">General English</option>
+                    <option value="english_it">English for IT</option>
+                </select>
+                <br>
+                <select name="current-level" id="current_level" required>
+                    <option value="" disabled selected hidden>What is your current level?</option>
+                    <option value="b1">B1</option>
+                    <option value="b2">B2</option>
+                    <option value="c1">C1</option>
+                    <option value="na">Not sure</option>
+                </select>
+                <br>
+                <label for="date">Choose your suitable date and time:</label>
+                <br>
+                <input type="date" id="date">
+                <br>
+                <input type="checkbox" id="privacy_policy" name="accept_privacy">
+                <label for="privacy_policy">I have read and agree to the <a href="">Privacy Policy</a></label>
+                <br>
+                <input type="checkbox" id="offer_agreement" name="accept_offer">
+                <label for="offer_agreement">I agree to the <a href="">Offer Agrement</a></label>
+                <br>
+                <button type="submit">Send request</button>
+            </form>
+        </div>
+        <div id="reviews">
+            <h2>Student reviews</h2>
+            <h3>Highly Recommend for IELTS Preparation!</h3>
+            <p>I took private lessons to prepare for my IELTS exam, and I couldn’t be happier with the results! My tutor provided structured lessons, detailed feedback on my writing, and plenty of speaking practice. Thanks to their guidance, I achieved an 8.0 overall! If you're serious about improving your English for exams, this is the best investment you can make.</p>
+            <h3>Great for Tech Professionals</h3>
+            <p>As a software developer, I needed to improve my English for meetings, emails, and tech conferences. My tutor focused on industry-specific vocabulary and real-world situations, making the lessons practical and effective. Now, I feel much more confident in my professional communication.</p>
+            <h3>Supportive and Professional Tutor</h3>
+            <p>I’ve had many English teachers before, but this tutor stands out because of their patience and structured approach. Whether it was pronunciation, writing, or business communication, every lesson was tailored to my needs. I highly recommend these lessons to anyone who wants fast and effective progress!</p>
+            <h3>Helped Me Pass the CAE Exam</h3>
+            <p>I was struggling with the CAE exam, especially the writing section. My tutor helped me improve my grammar, expand my vocabulary, and develop strong essay structures. The personalized feedback was invaluable, and I passed with a Grade B! Thank you for all your help!</p>
+            <h3>Perfect to level up your English</h3>
+            <p>I wanted to improve my English for everyday life and work, and these lessons were exactly what I needed. The classes were engaging, and I saw a huge improvement in my confidence. My speaking and writing skills are so much better now, and I even got a job that requires English communication!</p>
+        </div>
+        <div id="faq">
+            <h2>FAQs</h2>
+            <div class="faq-item">
+                <input type="checkbox" id="faq1" name="faq1">
+                <label for="faq1" class="faq-label">
+                    Do I need to buy any books?
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </label>
+                <div class="faq-answer">
+                    <p>No, you don’t need to purchase any books. I provide all the necessary materials for free with online access.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="faq2" name="faq2">
+                <label for="faq2" class="faq-label">
+                    What if I need to reschedule the lesson?
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </label>
+                <div class="faq-answer">
+                    <p>I understand that unexpected things happen. If you need to reschedule, please notify me at least 24 hours in advance to transfer your payment to a future lesson. For rescheduling requests made within 24 hours of the lesson, I will assess the reason, but I reserve the right to retain the payment.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="faq3" name="faq3">
+                <label for="faq3" class="faq-label">
+                    What if I miss the lesson?
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </label>
+                <div class="faq-answer">
+                    <p>If you miss a lesson without prior notice, the payment will be retained. To avoid this, please inform me at least 24 hours in advance if you need to reschedule.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="faq4" name="faq4">
+                <label for="faq4" class="faq-label">
+                    Is there homework?
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </label>
+                <div class="faq-answer">
+                    <p>Yes, the courses include homework assignments designed for extra practice. The time commitment ranges from 40 minutes to 2 hours per week, depending on how much time you choose to dedicate to English.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="faq5" name="faq5">
+                <label for="faq5" class="faq-label">
+                    Do you provide certificate after the course completion?
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </label>
+                <div class="faq-answer">
+                    <p>Yes, but only for General English (B1-C1) course. Upon completing each level, you will receive a personalised certificate stating the level achieved and the total hours of study.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <input type="checkbox" id="faq6" name="faq6">
+                <label for="faq6" class="faq-label">
+                    What if I'm not 100% happy?
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </label>
+                <div class="faq-answer">
+                    <p>If you're not completely satisfied, you can cancel at any time. I’ll refund you for any lessons that haven’t yet taken place. Your satisfaction is important to me!</p>
+                </div>
+            </div>
+        </div>
     </main>
     <!--Footer-->
     <footer>
