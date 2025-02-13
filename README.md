@@ -116,7 +116,7 @@ HTML and CSS were used to create this project.
 [Canva](https://www.canva.com/) - for creating custom images.\
 [VS Code](https://code.visualstudio.com/) - IDE for coding the website.\
 [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension for checking the spelling of the website and markdown files.\
-[Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension for viewing the website as people with accessibility needs.
+[Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension for viewing the website as people with accessibility needs.\
 [Tiny PNG](https://tinypng.com/) - for compressing images.
 
 ## DEPLOYMENT & LOCAL DEVELOPMENT
