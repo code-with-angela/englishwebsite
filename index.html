@@ -50,6 +50,7 @@
     </header>
     <!--Main content-->
     <main>
+        <!--About me section-->
         <div id="about-me" class="overlap-effect-wrapper">
             <div class="image-container">
                 <img src="assets/images/profile-picture-small.png" alt="Tutor's profile picture">
@@ -61,15 +62,15 @@
                     <p><a href="">Bachelor of Philology</a></p>
                     <br>
                     <p>Spent 5 months in the US & 3 years in the UK working and studying</p>
-                    <div class="link">
+                    <div class="services-link">
                         <img src="assets/images/calendar-50x50.png" alt=""> <!--Decorative image-->
                         <a href="#english-for-exams">Exam preparation</a>
                     </div>
-                    <div class="link">
+                    <div class="services-link">
                         <img src="assets/images/speech-bubble-50x50.png" alt=""> <!--Decorative image-->
                         <a href="#general-english-lessons">English lessons B1-C1</a>
                     </div>
-                    <div class="link">
+                    <div class="services-link">
                         <img src="assets/images/code-50x50.png" alt=""> <!--Decorative image-->
                         <a href="#english-for-tech">English for IT</a>
                     </div>
@@ -77,54 +78,90 @@
             </div>
         </div>
         <div id="services">
-            <div class="overlap-effect-wrapper">
+            <!--English for exams container-->
+            <div id="english-for-exams" class="services container orange">
                 <div class="image-container">
-                    <img src="assets/images/calendar-100x100.png" alt=""> <!--Decorative image-->
+                    <img src="assets/images/calendar-200x200.png" alt=""> <!--Decorative image-->
                 </div>
-                <div id="english-for-exams" class="services container orange">
-                    <div class="price">&#8372;500</div>
-                    <h2>IELTS and CAE language proficiency exam</h2>
-                    <p>Tailored lessons to improve language production, comprehension, literacy, and conversational skills for exam success</p>
-                    <p>1 hour 20 min long</p>
-                    <p>2-3 times/week</p>
-                    <p>1-to-1 online</p>
-                    <p>Official Cambridge materials</p>
-                    <a href="#reviews">Student reviews</a>
-                </div>
+                    <div>
+                        <div class="price">
+                            <i class="fa-solid fa-tag"></i>
+                            <span>&#8372;500</span>
+                        </div>
+                        <h2>IELTS and CAE language proficiency exam</h2>
+                        <p>Tailored lessons to improve language production, comprehension, literacy, and conversational skills for exam success</p>
+                        <br>
+                        <p>1 hour 20 min long</p>
+                        <p>2-3 times/week</p>
+                        <p>1-to-1 online</p>
+                        <p>Official Cambridge materials</p>
+                        <br>
+                        <div class="reviews-link">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <a href="#reviews">Student reviews</a>
+                        </div>
+                        <div class="trial-request-link">
+                            <a href="#trial-request-form">Request a trial lesson</a>
+                        </div>
+                    </div>   
             </div>
-            <div class="overlap-effect-wrapper">
+            <!--General English container-->
+            <div id="general-english-lessons" class="services container orange">
                 <div class="image-container">
-                    <img src="assets/images/speech-bubble-100x100.png" alt=""> <!--Decorative image-->
+                    <img src="assets/images/speech-bubble-200x200.png" alt=""> <!--Decorative image-->
                 </div>
-                <div id="general-english-lessons" class="services container orange">
-                    <div class="price">&#8372;450</div>
-                    <h2>English lessons for B1-C1 levels</h2>
-                    <p>English proficiency lessons for real-world applications in work, study, and travel</p>
-                    <p><strong>Not sure about your level? <a href="https://www.cambridgeenglish.org/test-your-english/general-english/" target="_blank" rel="noopener" aria-label="Cambridge General English test (opens in a new tab)">Take a free test!</a></strong></p>
-                    <p>1 hour long</p>
-                    <p>2-3 times/week</p>
-                    <p>1-to-1 online</p>
-                    <p>Official Cambridge materials</p>
-                    <a href="#reviews">Student reviews</a>
-                </div>
+                    <div>
+                        <div class="price">
+                            <i class="fa-solid fa-tag"></i>
+                            <span>&#8372;450</span>
+                        </div>
+                        <h2>English lessons for B1-C1 levels</h2>
+                        <p>English proficiency lessons for real-world applications in work, study, and travel</p>
+                        <p><strong>Not sure about your level? <br>
+                            <a href="https://www.cambridgeenglish.org/test-your-english/general-english/" target="_blank" rel="noopener" aria-label="Cambridge General English test (opens in a new tab)">Take a free test!</a>
+                            </strong>
+                        </p>
+                        <br>
+                        <p>1 hour long</p>
+                        <p>2-3 times/week</p>
+                        <p>1-to-1 online</p>
+                        <p>Official Cambridge materials</p>
+                        <br>
+                        <div class="reviews-link">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <a href="#reviews">Student reviews</a>
+                        </div>
+                        <div class="trial-request-link">
+                            <a href="#trial-request-form">Request a trial lesson</a>
+                        </div>
+                    </div>
             </div>
-            <div class="overlap-effect-wrapper">    
+            <!--English for IT container-->
+            <div id="english-for-tech" class="services container orange">
                 <div class="image-container">
-                    <img src="assets/images/code-100x100.png" alt=""> <!--Decorative image-->
+                    <img src="assets/images/code-200x200.png" alt=""> <!--Decorative image-->
                 </div>
-                <div id="english-for-tech" class="services container orange">
-                    <div class="price">&#8372;480</div>
+                <div>
+                    <div class="price">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>&#8372;480</span>
+                    </div>
                     <h2>English for tech industry</h2>
                     <p>Custom-developed lessons to enhance IT-specific vocabulary, communication skills, and career prospects in the global job market</p>
+                    <br>
                     <p>1 hour long</p>
                     <p>2-3 times/week</p>
                     <p>1-to-1 online</p>
                     <p>Authentic materials</p>
-                    <a href="#reviews">Student reviews</a>
-                </div>
-            </div>    
-            <div class="link">
-                <a href="">Request a trial lesson</a>
+                    <br>
+                    <div class="reviews-link">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <a href="#reviews">Student reviews</a>
+                    </div>
+                    <div class="trial-request-link">
+                        <a href="#trial-request-form">Request a trial lesson</a>
+                    </div>
+                </div>        
             </div>
         </div>
         <div id="trial-request-form" class="container orange">

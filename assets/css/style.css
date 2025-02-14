@@ -17,6 +17,12 @@ body {
     font-family: "Nunito Sans", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
 header a {
     text-decoration: none;
     color: inherit;
@@ -24,10 +30,6 @@ header a {
 
 header i {
     font-size: 6vw;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -127,53 +129,50 @@ main {
     margin: calc(1vh + 10px) 6vw 0 ;
 }
 
-/*About me container*/
-
+/*About me section*/
 .overlap-effect-wrapper {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5vh;
+}
+
+.overlap-effect-wrapper a {
+    color: inherit;
 }
 
 #about-me .image-container {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
     margin-top: 4.5vh;
+    top: -50px;
+    position: absolute;
+    z-index: 2;
 }
 
-#about-me .container {
+.container {
     border-radius: 50px;
-    margin-top: 5vh;
-    padding: 220px 0 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.container a {
+    color: inherit;
 }
 
 .pink {
     background-color: rgb(238, 124, 162, 0.3);
+    margin-top: 5vh;
+    padding: 220px 0 15px;
 }
 
 #about-me-content {
     padding-top: 2vh; /* Ensures content starts below the image */
-}
-
-#about-me-content p {
-    text-align: center;
-    padding: 0 0.5rem 0.3rem;
-}
-
-#about-me-content a {
-    color: inherit;
 }
 
 #about-me-content p:first-child {
@@ -181,9 +180,9 @@ main {
     font-weight: 600;
 }
 
-.link {
+.services-link {
     background-color: #eab55a;
-    padding: 1em 1.5em;
+    padding: 0.5em 1em;
     margin: 0.5em 1em;
     border-radius: 50px;
     display: flex;
@@ -193,14 +192,89 @@ main {
     gap: 15px;
 }
 
-.link a {
+.services-link a {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
 }
 
+/*Services section*/
 .orange {
     background-color: rgb(234, 181, 90, 0.3);
+    padding: 15px 0;
+}
+
+#services img {
+    width: 35vw;
+}
+
+.services h2 {
+    font-size: 1.25em;
+}
+
+.services h2, p {
+    text-align: center;
+    padding: 0 1rem 0.5rem;
+}
+
+.price {
+    position: absolute;
+    left: 70%;
+    top: -5%;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price i {
+    font-size: 7em;
+    color: #ee7ca2;
+}
+
+.price span {
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transform: rotate(45deg);
+    left: 28%;
+    top: 40%;
+}
+
+.reviews-link {
+    background-color: rgb(234, 181, 90, 0.5);
+    padding: 0.5em 1em;
+    margin: 0.5em 1em;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.reviews-link a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.reviews-link i {
+    font-size: 2em;
+    color: #ee7ca2;
+}
+
+.trial-request-link {
+    background-color: #eab55a;
+    padding: 0.5em 1em;
+    margin: 0.5em 1em;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.trial-request-link a {
+    font-size: 1.25em;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 /* Footer */
