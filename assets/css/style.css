@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 11vh; /* Adjusts anchor links within the page to account for the header-top*/
+}
+
 body {
     background-color: #FCFCFB;
     color: #131610; /* text-color*/
@@ -138,10 +142,6 @@ main {
     align-items: center;
 }
 
-.overlap-effect-wrapper a {
-    color: inherit;
-}
-
 #about-me .image-container {
     margin-top: 4.5vh;
     top: -50px;
@@ -173,11 +173,16 @@ main {
 
 #about-me-content {
     padding-top: 2vh; /* Ensures content starts below the image */
+    text-align: center;
 }
 
 #about-me-content p:first-child {
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+#about-me-content p {
+    padding: 0 1rem 0.5rem;
 }
 
 .services-link {
@@ -210,16 +215,18 @@ main {
 
 .services h2 {
     font-size: 1.25em;
+    text-align: center;
+    padding: 0 1rem 0.5rem;
 }
 
-.services h2, p {
+.services p {
     text-align: center;
     padding: 0 1rem 0.5rem;
 }
 
 .price {
     position: absolute;
-    left: 70%;
+    left: 68%;
     top: -5%;
     padding: 0.5em;
     display: flex;
@@ -235,10 +242,10 @@ main {
 .price span {
     position: absolute;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 650;
     transform: rotate(45deg);
-    left: 28%;
-    top: 40%;
+    left: 31%;
+    top: 41%;
 }
 
 .reviews-link {
@@ -275,6 +282,43 @@ main {
     font-size: 1.25em;
     font-weight: 600;
     text-decoration: none;
+}
+
+/* Student reviews container */
+#reviews img {
+    width: 35vw;
+}
+
+#reviews h2 {
+    margin: 0 0 1rem;
+    font-size: 1.23em;
+}
+
+.review-item {
+    background-color: rgb(150, 199, 231, 0.5);
+    margin: 1rem;
+    padding: 2rem 1rem 1.5rem;
+    border-radius: 50px;
+    position: relative;
+    text-align: left;
+}
+
+.review-item i {
+    font-size: 5em;
+    color: #ee7ca2;
+    position: absolute;
+    top: -45px;
+    left: 65%;
+    padding: 0.5rem;
+}
+
+.review-item h3 {
+    font-size: 0.9em;
+    padding-bottom: 0.5em;
+}
+
+.review-item p {
+    font-size: 0.9em;
 }
 
 /* Footer */
