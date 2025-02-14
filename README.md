@@ -1,7 +1,7 @@
 # ENGLISH WITH ANGELA
 This website is designed to provide information about private tutoring services offered for English learners. It is created using mobile-first approach and designed to be responsive to allow visitors to view on a range of devices.
 
-View deployed site: [English with Angela](#)
+View deployed site: [English with Angela](https://code-with-angela.github.io/englishwebsite/)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/code-with-angela/englishwebsite?style=flat-square&labelColor=%2396c7e7&color=%23ee7ca2)
 ![GitHub contributors](https://img.shields.io/github/contributors/code-with-angela/englishwebsite?style=flat-square&labelColor=%2396c7e7&color=%23ee7ca2)

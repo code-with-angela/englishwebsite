@@ -51,25 +51,26 @@
     <main>
         <div class="about-me" id="about-me">
             <div id="image-container">
-                <img src="assets/images/profile_picture.png" alt="Tutor's profile picture" id="profile">
-                <div id="circle"></div>
+                <img src="assets/images/profile-picture-small.png" alt="Tutor's profile picture">
             </div>
-            <p><strong>English tutor with passion for coding</strong></p>
-            <p><a href="">IELTS (C2, 2024)</a></p>
-            <p><a href="">Bachelor of Philology</a></p>
-            <p>Spent 5 months in the US & 3 years in the UK working and studying</p>
-            <button type="button" class="button decorative-image">
-                <img src="assets/images/calendar_small.png" alt="">
-                <a href="#english-for-exams">Exam preparation</a>
-            </button>
-            <button type="button" class="button decorative-image">
-                <img src="assets/images/speech_bubble_small.png" alt="">
-                <a href="#general-english-lessons">English lessons B1-C1</a>
-            </button>
-            <button type="button" class="button decorative-image">
-                <img src="assets/images/code_small.png" alt="">
-                <a href="#english-for-tech">English for IT</a>
-            </button>
+            <div id="below-image">
+                <p><strong>English tutor with passion for coding</strong></p>
+                <p><a href="">IELTS (C2, 2024)</a></p>
+                <p><a href="">Bachelor of Philology</a></p>
+                <p>Spent 5 months in the US & 3 years in the UK working and studying</p>
+                <div class="link">
+                    <img src="assets/images/calendar-50x50.png" alt="">
+                    <a href="#english-for-exams">Exam preparation</a>
+                </div>
+                <div class="link">
+                    <img src="assets/images/speech-bubble-50x50.png" alt="">
+                    <a href="#general-english-lessons">English lessons B1-C1</a>
+                </div>
+                <div class="link">
+                    <img src="assets/images/code-50x50.png" alt="">
+                    <a href="#english-for-tech">English for IT</a>
+                </div>
+            </div>
         </div>
         <div id="services">
             <div id="english-for-exams" class="services container">
@@ -93,7 +94,7 @@
                 <p>Official Cambridge materials</p>
                 <a href="#reviews">Student reviews</a>
             </div>
-            <div id="english-for-tech"class="services container">
+            <div id="english-for-tech" class="services container">
                 <div class="price">&#8372;480</div>
                 <h2>English for tech industry</h2>
                 <p>Custom-developed lessons to enhance IT-specific vocabulary, communication skills, and career prospects in the global job market</p>
@@ -103,7 +104,9 @@
                 <p>Authentic materials</p>
                 <a href="#reviews">Student reviews</a>
             </div>
-            <button type="button"><a href="">Request a trial lesson</a></button>
+            <div class="link">
+                <a href="">Request a trial lesson</a>
+            </div>
         </div>
         <div id="trial-request-form" class="container">
             <h2>Trial lesson request form</h2>
@@ -134,10 +137,10 @@
                 <br>
                 <input type="date" id="date">
                 <br>
-                <input type="checkbox" id="privacy_policy" name="accept_privacy">
+                <input type="checkbox" id="privacy_policy" name="accept_privacy" required>
                 <label for="privacy_policy">I have read and agree to the <a href="">Privacy Policy</a></label>
                 <br>
-                <input type="checkbox" id="offer_agreement" name="accept_offer">
+                <input type="checkbox" id="offer_agreement" name="accept_offer" required>
                 <label for="offer_agreement">I agree to the <a href="">Offer Agrement</a></label>
                 <br>
                 <button type="submit">Send request</button>
