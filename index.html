@@ -58,8 +58,8 @@
             <div class="container pink">
                 <div id="about-me-content">
                     <p>English tutor with passion for coding</p>
-                    <p><a href="">IELTS (C2, 2024)</a></p>
-                    <p><a href="">Bachelor of Philology</a></p>
+                    <p>IELTS (C2, 2024)</p>
+                    <p><a href="assets/pdfs/AMykytiuk_DegreeCertificate-compressed.pdf" target="_blank" rel="noopener" aria-label="Degree Cetrificate photo (opens in a new tab)">Bachelor of Philology</a></p>
                     <br>
                     <p>Spent 5 months in the US & 3 years in the UK working and studying</p>
                     <div class="services-link">
@@ -118,7 +118,7 @@
                         <h2>English lessons for B1-C1 levels</h2>
                         <p>English proficiency lessons for real-world applications in work, study, and travel</p>
                         <p><strong>Not sure about your level? <br>
-                            <a href="https://www.cambridgeenglish.org/test-your-english/general-english/" target="_blank" rel="noopener" aria-label="Cambridge General English test (opens in a new tab)">Take a free test!</a>
+                            <a href="https://www.cambridgeenglish.org/test-your-english/general-english/" target="_blank" rel="noopener noreferrer" aria-label="Cambridge General English test (opens in a new tab)">Take a free test!</a>
                             </strong>
                         </p>
                         <br>
@@ -196,16 +196,17 @@
                 <p>I wanted to improve my English for everyday life and work, and these lessons were exactly what I needed. The classes were engaging, and I saw a huge improvement in my confidence. My speaking and writing skills are so much better now, and I even got a job that requires English communication!</p>
             </div>
         </div>
+        <!--Trial lesson request form-->
         <div id="trial-request-form" class="container orange">
             <h2>Trial lesson request form</h2>
-            <form method="POST">
+            <form action="confirmation.html">
                 <input type="text" name="full_name" placeholder="Full Name" required>
                 <br>
-                <input type="tel" name="phone" placeholder="Phone number" required>
+                <input type="tel" name="phone" inputmode="numeric" pattern="[0-9]* placeholder="Phone number" required>
                 <br>
                 <input type="email" name="email" placeholder="Email" required>
                 <br>
-                <select name="lesson_type" id="lesson_type" required>
+                <select name="lesson-type" id="lesson-type" required>
                     <option value="" disabled selected hidden>Lesson type</option>
                     <option value="ielts">IELTS exam</option>
                     <option value="cae">CAE exam</option>
@@ -213,7 +214,7 @@
                     <option value="english_it">English for IT</option>
                 </select>
                 <br>
-                <select name="current-level" id="current_level" required>
+                <select name="current-level" id="current-level" required>
                     <option value="" disabled selected hidden>What is your current level?</option>
                     <option value="b1">B1</option>
                     <option value="b2">B2</option>
@@ -221,9 +222,9 @@
                     <option value="na">Not sure</option>
                 </select>
                 <br>
-                <label for="date">Choose your suitable date and time:</label>
+                <label for="datetime">Choose your suitable date and time:</label>
                 <br>
-                <input type="date" id="date">
+                <input type="datetime-local" id="datetime" min="2025-02-15T00:00" required>
                 <br>
                 <input type="checkbox" id="privacy_policy" name="accept_privacy" required>
                 <label for="privacy_policy">I have read and agree to the <a href="">Privacy Policy</a></label>

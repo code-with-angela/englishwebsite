@@ -157,12 +157,17 @@ main {
     align-items: center;
     position: relative;
     z-index: 1;
-    width: 100%;
     margin-bottom: 5vh;
 }
 
 .container a {
     color: inherit;
+}
+
+.container h2 {
+        font-size: 1.25em;
+        text-align: center;
+        padding: 0 1rem 0.5rem;
 }
 
 .pink {
@@ -211,12 +216,6 @@ main {
 
 #services img {
     width: 35vw;
-}
-
-.services h2 {
-    font-size: 1.25em;
-    text-align: center;
-    padding: 0 1rem 0.5rem;
 }
 
 .services p {
@@ -291,7 +290,6 @@ main {
 
 #reviews h2 {
     margin: 0 0 1rem;
-    font-size: 1.23em;
 }
 
 .review-item {
@@ -319,6 +317,51 @@ main {
 
 .review-item p {
     font-size: 0.9em;
+}
+
+/*Trial lesson request container */
+#trial-request-form {
+    padding: 7vw;
+    margin: 0.5em 0;
+}
+
+#trial-request-form input,
+#trial-request-form select {
+    padding: 10px;
+    font-size: 0.8rem;
+    border: 1px solid #ee7ca2;
+    border-radius: 10px;
+    margin: 0.5em;
+    width: 100%;
+}
+
+#trial-request-form label {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+select:invalid {
+    color: #757575;
+}
+
+/* Style checkboxes */
+#trial-request-form input[type="checkbox"] {
+    width: auto;
+    margin-left: 12px;
+    accent-color: #ee7ca2;
+    transform: scale(1.25);
+}
+
+#trial-request-form button {
+    background-color: #eab55a;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    font-size: 1.25em;
+    text-decoration: none;
+    width: 100%;
 }
 
 /* Footer */
