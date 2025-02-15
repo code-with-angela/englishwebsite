@@ -130,7 +130,7 @@ nav {
 /* Main content */
 main {
     flex: 1 0 auto; /*Main element takes all surplus space to push footer down*/
-    margin: calc(1vh + 10px) 6vw 0 ;
+    margin: calc(1vh + 10px) 6vw 0;
 }
 
 /*About me section*/
@@ -158,6 +158,7 @@ main {
     position: relative;
     z-index: 1;
     margin-bottom: 5vh;
+    width: 100%;
 }
 
 .container a {
@@ -322,6 +323,7 @@ main {
 /*Trial lesson request section */
 #trial-request-form {
     padding: 7vw;
+    display: block;
 }
 
 #trial-request-form input,
@@ -401,7 +403,6 @@ select:invalid {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
     padding: 0 2.5vh;
     font-size: 0.9em;
 }
@@ -409,7 +410,6 @@ select:invalid {
 /* Show the answer when checkbox is checked */
 .faq-item input[type="checkbox"]:checked ~ .faq-answer {
     max-height: 500px;
-    transition: max-height 0.3s ease-in;
     margin-top: 10px;
 }
 
@@ -448,29 +448,29 @@ footer {
     color: #eab55a;
 }
 
-.documents a {
+#documents a {
     color: #ee7ca2;
     text-decoration: none;
     padding: 0.5em;
 }
 
-.documents {
+#documents {
     display: flex;
     justify-content: space-evenly;
     font-weight: 600;
-    font-size: 4.5vw;
+    font-size: 1em;
     margin: 0.5em 0;
     align-self: center;
 }
 
 #copyright {
     padding-top: 4%;
-    font-size: 4vw;
+    font-size: 1em;
     align-self: center;
 }
 
 /* Media query: >768px */
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     /* Header */
     nav {
         display: block;
@@ -509,12 +509,77 @@ footer {
 
     /* Main content */
     main {
-        margin: calc(10vh + 20px) 6vw 0 ;
+        margin: 20px 10vw 0;
     }
+
+    /* About me section */
+    #about-me-content p:last-of-type {
+        margin-bottom: 1rem;
+    }
+
+    .container h2 {
+        font-size: 1.5em;
+    }
+
+    /* Services section */
+    .services p {
+        padding: 0 4rem 0.5rem;
+    }
+
+    .reviews-link,
+    .trial-request-link {
+        max-width: 450px;
+        text-align: center;
+        margin: 1em auto;
+    }
+
+    .price {
+        position: absolute;
+        left: 75%;
+        top: -5%;
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price i {
+        font-size: 8em;
+    }
+    
+    .price span {
+        font-size: 1.5rem;
+    }
+
+    /* Trial lesson request section */
+    #trial-request-form {
+        padding: 6vw 10vw;
+    }
+
+    #trial-request-form input,
+    #trial-request-form select {
+        font-size: 1rem;
+    }
+
+    #trial-request-form label {
+        font-size: 1em;
+    }
+
+    /* Footer */
+    #contact-me,
+    #copyright {
+        font-size: 1.5em;
+    }
+
+    #documents {
+        font-size: 1.75em;
+    }
+
 }
 
 /* Media query: >992px */
 @media screen and (min-width: 992px) {
+    /* Header */
     #menu a:hover {
         border-bottom: 1px solid #96c7e7;
     }
@@ -542,5 +607,10 @@ footer {
     #menu > li {
         padding-left: 1.75vw;
         font-size: 100%;
+    }
+
+    /* Main content */
+    main {
+        margin: 20px 6vw 0;
     }
 }

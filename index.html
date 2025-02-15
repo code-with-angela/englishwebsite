@@ -201,7 +201,7 @@
             <form action="confirmation.html">
                 <input type="text" name="full_name" placeholder="Full Name" required>
                 <br>
-                <input type="tel" pattern="[0-9]" placeholder="Phone number" required>
+                <input type="tel" pattern="^\+?[0-9]{1,4}[\s\-]?[0-9]{1,4}[\s\-]?[0-9]{1,4}$" placeholder="Phone number" required>
                 <br>
                 <input type="email" name="email" placeholder="Email" required>
                 <br>
@@ -311,7 +311,7 @@
             <a href="mailto:english_withangela@gmail.com"><i class="fa-solid fa-envelope"></i> Email me</a>
             <a href="https://t.me/angela_brown21" target="_blank" rel="noopener" aria-label="Send me a message via Telegram (opens in a new tab)"><i class="fa-brands fa-telegram"></i> Message me in Telegram</a>
         </div>
-        <div class="documents">
+        <div id="documents">
             <a href="assets/pdfs/offer-agreement.pdf" target="_blank" rel="noopener" aria-label="Offer Agreement pdf document (opens in a new tab)">Offer Agreement</a>
             <a href="assets/pdfs/privacy-policy.pdf" target="_blank" rel="noopener" aria-label="Privacy Policy pdf document (opens in a new tab)">Privacy Policy</a>
         </div>
