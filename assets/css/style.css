@@ -283,7 +283,7 @@ main {
     text-decoration: none;
 }
 
-/* Student reviews container */
+/* Student reviews section */
 #reviews img {
     width: 35vw;
 }
@@ -296,7 +296,7 @@ main {
     background-color: rgb(150, 199, 231, 0.5);
     margin: 1rem;
     padding: 2rem 1rem 1.5rem;
-    border-radius: 50px;
+    border-radius: 20px;
     position: relative;
     text-align: left;
 }
@@ -306,7 +306,7 @@ main {
     color: #ee7ca2;
     position: absolute;
     top: -45px;
-    left: 65%;
+    left: 70%;
     padding: 0.5rem;
 }
 
@@ -319,10 +319,9 @@ main {
     font-size: 0.9em;
 }
 
-/*Trial lesson request container */
+/*Trial lesson request section */
 #trial-request-form {
     padding: 7vw;
-    margin: 0.5em 0;
 }
 
 #trial-request-form input,
@@ -364,16 +363,95 @@ select:invalid {
     width: 100%;
 }
 
+/* FAQs section */
+#faq {
+    padding: 7vw;
+}
+
+.faq-item {
+    padding-bottom: 10px;
+}
+
+.faq-item i {
+    font-size: 1.5em;
+    color: #ee7ca2;
+}
+
+/* Hide checkbox */
+.faq-toggle {
+    display: none;
+}
+
+/* Style the question label */
+.faq-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vw 2.5vh;
+    background-color: rgb(238, 124, 162, 0.3);
+    border-radius: 20px;
+}
+
+/* Hide the close icon initially */
+.faq-label .close-icon {
+    display: none;
+}
+
+/* Hide the answer initially */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 2.5vh;
+    font-size: 0.9em;
+}
+
+/* Show the answer when checkbox is checked */
+.faq-item input[type="checkbox"]:checked ~ .faq-answer {
+    max-height: 500px;
+    transition: max-height 0.3s ease-in;
+    margin-top: 10px;
+}
+
+/* Toggle icons */
+.faq-item input[type="checkbox"]:checked ~ .faq-label .fa-arrow-down {
+    display: none;
+}
+
+.faq-item input[type="checkbox"]:checked ~ .faq-label .close-icon {
+    display: inline;
+}
+
 /* Footer */
 footer {
     background-color: #FCFCFB;
-    text-align: center;
-    padding: 2vh 4vw;
+    margin: 0 6vw 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-footer a {
+#contact-me {
+    font-size: 1em;
+}
+
+#contact-me a {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5em;
+}
+
+#contact-me i {
+    font-size: 1em;
+    color: #eab55a;
+}
+
+.documents a {
     color: #ee7ca2;
     text-decoration: none;
+    padding: 0.5em;
 }
 
 .documents {
@@ -381,11 +459,14 @@ footer a {
     justify-content: space-evenly;
     font-weight: 600;
     font-size: 4.5vw;
+    margin: 0.5em 0;
+    align-self: center;
 }
 
 #copyright {
     padding-top: 4%;
     font-size: 4vw;
+    align-self: center;
 }
 
 /* Media query: >768px */
