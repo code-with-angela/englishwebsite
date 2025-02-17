@@ -23,35 +23,24 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
-}
-
-#thank-you {
-    background-color: rgb(238, 124, 162, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2vw 5vw;
-    margin: 2vw 5vw;
-    border-radius: 50px;
-}
-
-#thank-you p {
     text-align: center;
-    font-size: 1.25em;
-    padding: 1em 0;
 }
 
-#thank-you a {
-    color: inherit;
-}
-
-/* Header */
-
-header a {
+body a {
     text-decoration: none;
     color: inherit;
 }
+
+body p {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+body i {
+    color: #ee7ca2;
+}
+
+/* Header */
 
 header i {
     font-size: 6vw;
@@ -63,12 +52,13 @@ h1 {
     font-weight: 500;
 }
 
+/* Fix top-halp of the header to the top of the page */
 .top-row {
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    z-index: 99; /* Top row always above the rest of the content */
     background-color: #FCFCFB;
     padding: 3vh 4vw;
     width: 100%;
@@ -78,30 +68,20 @@ h1 {
     display: flex;
     gap: 3vw;
     align-items: center;
+}
+
+.social-icons i {
     color: #eab55a;
 }
 
 .title {
     text-align: center;
-    margin-top: calc(9vh + 10px);
+    margin-top: calc(9vh + 10px); /* accounting for top-row, so there's no overlap on different devices*/
     font-weight: bold;
 }
 
-.icon-container {
-    color: #96c7e7;
-}
-
-#menu {
-    list-style-type: none; 
-    display: flex;
-    flex-direction: column;
-    padding: 0.1rem;
-}
-
-#menu > li {
-    margin-bottom: 0.2rem;
-    text-align: right;
-    font-size: 4vw;
+.icon-container i {
+    color: #96c7e7; /*different colour for toggle button to social icons */
 }
 
 /* Navbar styles with dropdown toggle */
@@ -110,10 +90,19 @@ nav {
     background-color: #FCFCFB;
     width: 100%;
     left: 0;
-    padding-right: 1rem;
+    padding-right: 1.3rem;
     box-shadow: 0 2px 2px #96c7e7;
     display: none;
     top: 70%;
+}
+
+#menu {
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 0.3rem; /*space between the li*/
+    text-align: right;
 }
 
 /* Nav toggle */
@@ -151,56 +140,70 @@ nav {
 /* Main content */
 main {
     flex: 1 0 auto; /*Main element takes all surplus space to push footer down*/
-    margin: calc(1vh + 10px) 6vw 0;
-}
-
-/*About me section*/
-.overlap-effect-wrapper {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#about-me .image-container {
-    margin-top: 4.5vh;
-    top: -50px;
-    position: absolute;
-    z-index: 2;
-}
-
-.container {
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 5vh;
-    width: 100%;
-}
-
-.container a {
-    color: inherit;
-}
-
-.container h2 {
-        font-size: 1.25em;
-        text-align: center;
-        padding: 0 1rem 0.5rem;
+    margin: 8vh 7vw 0; /*Whitespace*/
 }
 
 .pink {
     background-color: rgb(238, 124, 162, 0.3);
-    margin-top: 5vh;
-    padding: 220px 0 15px;
+}
+
+.orange {
+    background-color: rgb(234, 181, 90, 0.3);
+}
+
+/* Confirmation page styles */
+#thank-you {
+    justify-content: center;
+    padding: 2vw 5vw;
+    margin: 2vw 5vw;
+}
+
+#thank-you p {
+    font-size: 1.25em;
+}
+
+#thank-you a {
+    text-decoration: underline;
+}
+
+/* Main page styles */
+/* Button-like appearance for links to different page sections */
+.button-look {
+    padding: 0.5em 1em;
+    margin: 0.5em 1.25em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Each section's container */
+.container {
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+    width: 100%;
+    padding: 3vw;
+}
+
+.container h2 {
+    font-size: 1.25em;
+    margin: 0.5rem 0;
+}
+
+/*About me section*/
+#about-me .image-container {
+    position: absolute;
+    top: -7vh;
 }
 
 #about-me-content {
-    padding-top: 2vh; /* Ensures content starts below the image */
-    text-align: center;
+    margin-top: calc(220px + 2vw); /* Ensures content starts below the image */
 }
 
 #about-me-content p:first-child {
@@ -208,41 +211,30 @@ main {
     font-weight: 600;
 }
 
-#about-me-content p {
-    padding: 0 1rem 0.5rem;
+#about-me-content p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+#about-me-content a:first-child {
+    text-decoration: underline;
 }
 
 .services-link {
     background-color: #eab55a;
-    padding: 0.5em 1em;
-    margin: 0.5em 1em;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
 }
 
 .services-link a {
-    text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
+    text-align: left;
 }
 
 /*Services section*/
-.orange {
-    background-color: rgb(234, 181, 90, 0.3);
-    padding: 15px 0;
-}
 
 #services img {
     width: 35vw;
-}
-
-.services p {
-    text-align: center;
-    padding: 0 1rem 0.5rem;
+    max-width: 200px;
 }
 
 .price {
@@ -257,7 +249,6 @@ main {
 
 .price i {
     font-size: 7em;
-    color: #ee7ca2;
 }
 
 .price span {
@@ -271,61 +262,42 @@ main {
 
 .reviews-link {
     background-color: rgb(234, 181, 90, 0.5);
-    padding: 0.5em 1em;
-    margin: 0.5em 1em;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
 }
 
 .reviews-link a {
-    text-decoration: none;
     font-weight: 400;
 }
 
 .reviews-link i {
     font-size: 2em;
-    color: #ee7ca2;
 }
 
 .trial-request-link {
     background-color: #eab55a;
-    padding: 0.5em 1em;
-    margin: 0.5em 1em;
-    border-radius: 50px;
     text-align: center;
 }
 
 .trial-request-link a {
     font-size: 1.25em;
     font-weight: 600;
-    text-decoration: none;
 }
 
 /* Student reviews section */
 #reviews img {
     width: 35vw;
-}
-
-#reviews h2 {
-    margin: 0 0 1rem;
+    max-width: 200px;
 }
 
 .review-item {
     background-color: rgb(150, 199, 231, 0.5);
-    margin: 1rem;
+    margin: 1.25rem 1rem 1rem;
     padding: 2rem 1rem 1.5rem;
     border-radius: 20px;
     position: relative;
-    text-align: left;
 }
 
 .review-item i {
     font-size: 5em;
-    color: #ee7ca2;
     position: absolute;
     top: -45px;
     left: 70%;
@@ -334,11 +306,13 @@ main {
 
 .review-item h3 {
     font-size: 0.9em;
-    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    text-align: left;
 }
 
 .review-item p {
     font-size: 0.9em;
+    text-align: left;
 }
 
 /*Trial lesson request section */
@@ -378,7 +352,7 @@ select:invalid {
     background-color: #eab55a;
     padding: 0.5em 1em;
     margin-top: 1em;
-    border-radius: 50px;
+    border-radius: 20px;
     text-align: center;
     border: none;
     font-size: 1.25em;
@@ -397,7 +371,6 @@ select:invalid {
 
 .faq-item i {
     font-size: 1.5em;
-    color: #ee7ca2;
 }
 
 /* Hide checkbox */
@@ -411,7 +384,6 @@ select:invalid {
     align-items: center;
     justify-content: space-between;
     padding: 2.5vw 2.5vh;
-    background-color: rgb(238, 124, 162, 0.3);
     border-radius: 20px;
 }
 
@@ -424,8 +396,12 @@ select:invalid {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    padding: 0 2.5vh;
+    padding: 0 0.5em;
     font-size: 0.9em;
+}
+
+.faq-answer p {
+    text-align: left;
 }
 
 /* Show the answer when checkbox is checked */
@@ -459,9 +435,7 @@ footer {
 #contact-me a {
     display: flex;
     gap: 15px;
-    text-decoration: none;
-    color: inherit;
-    padding: 0.5em;
+    margin: 0.5em;
 }
 
 #contact-me i {
@@ -471,7 +445,6 @@ footer {
 
 #documents a {
     color: #ee7ca2;
-    text-decoration: none;
     padding: 0.5em;
 }
 
@@ -485,7 +458,6 @@ footer {
 }
 
 #copyright {
-    padding-top: 4%;
     font-size: 1em;
     align-self: center;
 }
@@ -520,7 +492,6 @@ footer {
 
     #menu > li {
         padding-left: 1rem;
-        font-size: 90%;
         white-space: nowrap;
     }
 
@@ -534,12 +505,16 @@ footer {
     }
 
     /* About me section */
-    #about-me-content p:last-of-type {
-        margin-bottom: 1rem;
-    }
-
     .container h2 {
         font-size: 1.5em;
+    }
+
+    .services-link {
+        justify-content: space-evenly;
+    }
+
+    .services-link a {
+        min-width: 15em;
     }
 
     /* Services section */
@@ -587,13 +562,8 @@ footer {
     }
 
     /* Footer */
-    #contact-me,
-    #copyright {
-        font-size: 1.5em;
-    }
-
     #documents {
-        font-size: 1.75em;
+        font-size: 1.25em;
     }
 
 }
