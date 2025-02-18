@@ -40,7 +40,7 @@ body i {
     color: #ee7ca2;
 }
 
-/* Header */
+/* HEADER */
 
 header i {
     font-size: 6vw;
@@ -137,7 +137,7 @@ nav {
     align-items: flex-end;
 }
 
-/* Main content */
+/* MAIN CONTENT */
 main {
     flex: 1 0 auto; /*Main element takes all surplus space to push footer down*/
     margin: 8vh 7vw 0; /*Whitespace*/
@@ -151,7 +151,7 @@ main {
     background-color: rgb(234, 181, 90, 0.3);
 }
 
-/* Confirmation page styles */
+/* CONFIRMATION PAGE STYLES */
 #thank-you {
     justify-content: center;
     padding: 2vw 5vw;
@@ -166,7 +166,7 @@ main {
     text-decoration: underline;
 }
 
-/* Main page styles */
+/* MAIN PAGE STYLES */
 /* Button-like appearance for links to different page sections */
 .button-look {
     padding: 0.5em 1em;
@@ -321,6 +321,10 @@ main {
     display: block;
 }
 
+#trial-request-form a {
+    text-decoration: underline;
+}
+
 #trial-request-form input,
 #trial-request-form select {
     padding: 10px;
@@ -343,9 +347,10 @@ select:invalid {
 /* Style checkboxes */
 #trial-request-form input[type="checkbox"] {
     width: auto;
-    margin-left: 12px;
+    margin: 12px;
+    padding: 2px;
     accent-color: #ee7ca2;
-    transform: scale(1.25);
+    transform: scale(1.5);
 }
 
 #trial-request-form button {
@@ -366,7 +371,11 @@ select:invalid {
 }
 
 .faq-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Ensures that the question boxes expand dynamically with the screen size */
     padding-bottom: 10px;
+    width: 100%;
 }
 
 .faq-item i {
@@ -383,7 +392,7 @@ select:invalid {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5vw 2.5vh;
+    padding: 1rem;
     border-radius: 20px;
 }
 
@@ -394,10 +403,11 @@ select:invalid {
 
 /* Hide the answer initially */
 .faq-answer {
-    max-height: 0;
+    flex: 0 1 auto;
     overflow: hidden;
     padding: 0 0.5em;
     font-size: 0.9em;
+    max-height: 0;
 }
 
 .faq-answer p {
@@ -406,6 +416,7 @@ select:invalid {
 
 /* Show the answer when checkbox is checked */
 .faq-item input[type="checkbox"]:checked ~ .faq-answer {
+    flex-grow: 1;
     max-height: 500px;
     margin-top: 10px;
 }
@@ -421,49 +432,48 @@ select:invalid {
 
 /* Footer */
 footer {
-    background-color: #FCFCFB;
-    margin: 0 6vw 32px;
+    margin: 0 7vw 6vh; /*Match width with the main content */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#contact-me {
-    font-size: 1em;
-}
-
 #contact-me a {
     display: flex;
     gap: 15px;
-    margin: 0.5em;
+    padding: 0.5em;
 }
 
 #contact-me i {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #eab55a;
-}
-
-#documents a {
-    color: #ee7ca2;
-    padding: 0.5em;
 }
 
 #documents {
     display: flex;
-    justify-content: space-evenly;
-    font-weight: 600;
-    font-size: 1em;
+    justify-content: space-around;
+    font-weight: 650;
     margin: 0.5em 0;
-    align-self: center;
+    width: 90%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#documents a {
+    padding: 0.5em 1em;
 }
 
 #copyright {
-    font-size: 1em;
     align-self: center;
 }
 
 /* Media query: >768px */
 @media screen and (min-width: 768px) {
+    body p {
+        font-size: 1.25em;
+        margin: 1rem;
+    }
+
     /* Header */
     nav {
         display: block;
@@ -501,7 +511,7 @@ footer {
 
     /* Main content */
     main {
-        margin: 20px 10vw 0;
+        margin: 50px 10vw 0;
     }
 
     /* About me section */
@@ -515,11 +525,32 @@ footer {
 
     .services-link a {
         min-width: 15em;
+        font-size: 1.5rem;
+    }
+
+    #about-me .image-container {
+        top: -4vh;
+    }
+
+    #about-me-content {
+        margin-top: calc(200px + 2vw);
+    }
+
+    #about-me-content p:first-child {
+        font-size: 1.5rem;
     }
 
     /* Services section */
     .services p {
         padding: 0 4rem 0.5rem;
+    }
+
+    .price i {
+        font-size: 10em;
+    }
+    
+    .price span {
+        font-size: 1.75rem;
     }
 
     .reviews-link,
@@ -529,22 +560,26 @@ footer {
         margin: 1em auto;
     }
 
-    .price {
-        position: absolute;
-        left: 75%;
-        top: -5%;
-        padding: 0.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .price i {
-        font-size: 8em;
+    .reviews-link a {
+        font-size: 1.5em;
     }
     
-    .price span {
-        font-size: 1.5rem;
+    .reviews-link i {
+        font-size: 3em;
+    }
+    
+    .trial-request-link a {
+        font-size: 1.75em;
+    }
+
+    /* Student reviews */
+    .review-item h3 {
+        font-size: 1em;
+        padding-left: 1em;
+    }
+
+    .review-item p {
+        font-size: 1em;
     }
 
     /* Trial lesson request section */
@@ -561,7 +596,23 @@ footer {
         font-size: 1em;
     }
 
+    #trial-request-form input[type="checkbox"] {
+        transform: scale(1.75);
+    }
+
+    #trial-request-form button {
+        font-size: 1.5em;
+    }
+
+    /* FAQ section */
+    .faq-label {
+        font-size: 1.1em;
+    }
+
     /* Footer */
+    footer {
+        margin: 0 10vw 6vh;
+    }
     #documents {
         font-size: 1.25em;
     }
@@ -601,7 +652,4 @@ footer {
     }
 
     /* Main content */
-    main {
-        margin: 20px 6vw 0;
-    }
-}
+    
