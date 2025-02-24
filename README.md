@@ -78,8 +78,8 @@ All images used in this website are of my own creation using Canva.\
 Other graphics are incorporated using [Font Awesome](https://fontawesome.com/).
 
 ### Wireframes
-The wireframes for mobile were created using Moqups web application.\
-[Mobile wireframe](https://app.moqups.com/g5ID5qfnJA5NRQ334gz5yq1XnijMqEg8/view/page/ad64222d5)
+The wireframes for mobile, tablet and desktop were created using Moqups web application.\
+[Wireframes](https://app.moqups.com/4mV8Uu2jgUkX7pfRictDC1q5xqOKERDk/view/page/ad64222d5)
 
 ### Features
 This website is a single scrolling page with 5 separate page areas, that include about me section, services section, trial lesson request section, student reviews, and FAQs.
