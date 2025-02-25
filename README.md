@@ -96,7 +96,7 @@ This website is created with accessibility in mind from the very beginning:
 * The Realtime Colors website used to generate the color palette has inbuilt contrast checker to ensure readability. All colors chosen pass both AA and AAA levels.
 * Both Nunito Sans and Poppins are considered accessible fonts for web design as they belong to sans-serif font family that is considered dyslexic-friendly. Aditionally, I ensured that these fonts are used with appropriate contrast, size, and spacing. 
 * The code incorporates semantic HTML.
-* Images have descriptive alt attributes.
+* Decorative images don't have alt so the reader doesn't get distracted from the content.
 * Icons without text have information for screen readers, such as social media icons, student profile, and menu.
 * A hover state is used on all buttons on the site (N/A for mobile & tablet versions).
 
