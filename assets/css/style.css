@@ -248,6 +248,7 @@ main {
 
 #services img {
     width: 35vw;
+    max-width: 150px;
 }
 
 .price {
@@ -271,6 +272,10 @@ main {
     transform: rotate(45deg);
     left: 31%;
     top: 41%;
+}
+
+#general-english-lessons p a {
+    text-decoration: underline;
 }
 
 .reviews-link {
