@@ -684,6 +684,7 @@ footer {
 
     #services img {
         width: 14vw;
+        max-width: 150px;
     }
 
     .price {
