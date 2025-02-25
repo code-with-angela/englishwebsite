@@ -21,11 +21,6 @@ body {
     font-family: "Nunito Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-}
-
 body a {
     text-decoration: none;
     color: inherit;
@@ -34,24 +29,34 @@ body a {
 body p {
     text-align: center;
     margin: 0.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem); /* Function to dynamically change the font-size */
 }
 
 body i {
     color: #ee7ca2;
+    font-size: clamp(1.5em, 5vw, 2em);
 }
 
-/* HEADER */
-
-header i {
-    font-size: 6vw;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 6vw;
     font-weight: 500;
 }
 
+h2 {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+h3 {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+
+/* HEADER */
 /* Fix top-halp of the header to the top of the page */
 .top-row {
     position: fixed;
@@ -158,10 +163,6 @@ main {
     margin: 2vw 5vw;
 }
 
-#thank-you p {
-    font-size: 1.25em;
-}
-
 #thank-you a {
     text-decoration: underline;
 }
@@ -191,24 +192,28 @@ main {
     padding: 3vw;
 }
 
-.container h2 {
-    font-size: 1.25em;
-    margin: 0.5rem 0;
-}
-
 /*About me section*/
 #about-me .image-container {
-    position: absolute;
+    position: absolute; /* Positions container relative to the parent */
     top: -7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container p {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-weight: 600;
+}
+
+.image-container img {
+    max-width: 200px;
+    height: auto;
 }
 
 #about-me-content {
     margin-top: calc(220px + 2vw); /* Ensures content starts below the image */
-}
-
-#about-me-content p:first-child {
-    font-size: 1.2rem;
-    font-weight: 600;
 }
 
 #about-me-content p:last-of-type {
@@ -230,11 +235,19 @@ main {
     text-align: left;
 }
 
+#about-me .trial-request-link {
+    display: none;
+}
+
 /*Services section*/
+#services {
+    display: flex;
+    flex-direction: column; /* Default for smaller screens */
+    align-items: center;
+}
 
 #services img {
     width: 35vw;
-    max-width: 200px;
 }
 
 .price {
@@ -297,21 +310,19 @@ main {
 }
 
 .review-item i {
-    font-size: 5em;
     position: absolute;
-    top: -45px;
+    top: -35px;
     left: 70%;
     padding: 0.5rem;
+    font-size: 4em;
 }
 
 .review-item h3 {
-    font-size: 0.9em;
     padding-left: 0.5em;
     text-align: left;
 }
 
 .review-item p {
-    font-size: 0.9em;
     text-align: left;
 }
 
@@ -378,10 +389,6 @@ select:invalid {
     width: 100%;
 }
 
-.faq-item i {
-    font-size: 1.5em;
-}
-
 /* Hide checkbox */
 .faq-toggle {
     display: none;
@@ -406,7 +413,6 @@ select:invalid {
     flex: 0 1 auto;
     overflow: hidden;
     padding: 0 0.5em;
-    font-size: 0.9em;
     max-height: 0;
 }
 
@@ -445,7 +451,6 @@ footer {
 }
 
 #contact-me i {
-    font-size: 1.2em;
     color: #eab55a;
 }
 
@@ -469,11 +474,6 @@ footer {
 
 /* Media query: >768px */
 @media screen and (min-width: 768px) {
-    body p {
-        font-size: 1.25em;
-        margin: 1rem;
-    }
-
     /* Header */
     nav {
         display: block;
@@ -515,10 +515,6 @@ footer {
     }
 
     /* About me section */
-    .container h2 {
-        font-size: 1.5em;
-    }
-
     .services-link {
         justify-content: space-evenly;
     }
@@ -534,10 +530,6 @@ footer {
 
     #about-me-content {
         margin-top: calc(200px + 2vw);
-    }
-
-    #about-me-content p:first-child {
-        font-size: 1.5rem;
     }
 
     /* Services section */
@@ -604,15 +596,11 @@ footer {
         font-size: 1.5em;
     }
 
-    /* FAQ section */
-    .faq-label {
-        font-size: 1.1em;
-    }
-
     /* Footer */
     footer {
         margin: 0 10vw 6vh;
     }
+
     #documents {
         font-size: 1.25em;
     }
@@ -624,14 +612,6 @@ footer {
     /* Header */
     #menu a:hover {
         border-bottom: 1px solid #96c7e7;
-    }
-
-    header i {
-        font-size: 2rem;
-    }
-
-    h1 {
-        font-size: 4rem;
     }
 
     .top-row {
@@ -648,8 +628,80 @@ footer {
 
     #menu > li {
         padding-left: 1.75vw;
-        font-size: 100%;
     }
 
     /* Main content */
-    
+    #about-me .image-container {
+        position: static; /* Return image into the document flow to change the display */
+    }
+
+    #about-me {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #about-me-content {
+        margin-top: 0;
+    }
+
+    #about-me .services-link {
+        display: none;
+    }
+
+    #about-me .trial-request-link {
+        display: block; /* Show the trial-request button */
+        max-width: 350px;
+    }
+
+    #about-me .trial-request-link a {
+        text-decoration: none;
+    }
+
+    .container {
+        padding: 1vw;
+        justify-content: space-between;
+    }
+
+    #services {
+        flex-direction: row; /* Switch to row layout */
+        justify-content: space-around; /* Space out service items */
+        align-items: stretch;
+    }
+
+    .services {
+        flex: 1; /* Ensures equal width distribution */
+        margin: 0 0.5rem 5vh; /* Adds spacing between items */
+    }
+
+    .services p {
+        padding: 0 0 0.5rem;
+    }
+
+    #services img {
+        width: 14vw;
+    }
+
+    .price {
+        top: -4%;
+    }
+
+    .price i {
+        font-size: 6em;
+    }
+
+    .price span {
+        font-size: 1.1rem;
+    }
+
+    .reviews-link {
+        display: none
+    }
+
+    .trial-request-link a {
+        font-size: 1.5em;
+    }
+
+    .review-item p {
+        padding-left: 0.5em;
+    }
+}
